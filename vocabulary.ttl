@@ -2,20 +2,20 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix vocab: <http://purl.org/m4m/> .
+@prefix vocab: <http://purl.org/pact_funders/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://purl.org/m4m> a skos:ConceptScheme;
+<http://purl.org/pact_funders> a skos:ConceptScheme;
   dct:created "2022-06-01T00:00:00+00:00"^^xsd:datetime;
   dct:description "Vocabulary description"@en;
   dct:hasVersion "0.1.0";
-  dct:modified "2023-01-29T20:06:06+00:00"^^xsd:datetime;
+  dct:modified "2023-01-29T20:23:37+00:00"^^xsd:datetime;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "Vocabulary title"@en;
   skos:hasTopConcept vocab:1000;
   foaf:homepage "URL to the community developing vocab"@en .
 
 vocab:1000 a skos:Concept;
-  skos:inScheme <http://purl.org/m4m>;
+  skos:inScheme <http://purl.org/pact_funders>;
   skos:prefLabel "test term"@en;
-  skos:topConceptOf <http://purl.org/m4m> .
+  skos:topConceptOf <http://purl.org/pact_funders> .
