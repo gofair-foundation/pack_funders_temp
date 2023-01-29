@@ -60,6 +60,7 @@ jobs:
           mv xls2rdf.log ./logs/
 #          python ./src/update.py
 
+
 # Issues with qSKOS
 #      - name: test
 #        env:
