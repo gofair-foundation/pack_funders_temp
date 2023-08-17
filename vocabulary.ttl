@@ -9,7 +9,7 @@
   dct:created "2022-06-01T00:00:00+00:00"^^xsd:datetime;
   dct:description "Vocabulary description"@en;
   dct:hasVersion "0.1.0";
-  dct:modified "2023-08-17T11:19:58+00:00"^^xsd:datetime;
+  dct:modified "2023-08-17T11:30:47+00:00"^^xsd:datetime;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "Vocabulary title"@en;
   skos:hasTopConcept vocab:1000, vocab:1001, vocab:1002, vocab:1003, vocab:1004, vocab:1005,
@@ -23,37 +23,37 @@ vocab:1000 a skos:Concept;
   skos:topConceptOf <http://purl.org/pact_funders> .
 
 vocab:1001 a skos:Concept;
-  skos:altLabel "vocab.1001"@en;
+  skos:altLabel "vocab.1000"@en;
   skos:inScheme <http://purl.org/pact_funders>;
   skos:prefLabel "new"@en;
   skos:topConceptOf <http://purl.org/pact_funders> .
 
 vocab:1002 a skos:Concept;
-  skos:altLabel "vocab.1001"@en;
+  skos:altLabel "vocab.1000"@en;
   skos:inScheme <http://purl.org/pact_funders>;
   skos:prefLabel "repurposed"@en;
   skos:topConceptOf <http://purl.org/pact_funders> .
 
 vocab:1003 a skos:Concept;
-  skos:altLabel "vocab.1001"@en;
+  skos:altLabel "vocab.1000"@en;
   skos:inScheme <http://purl.org/pact_funders>;
   skos:prefLabel "supplemented"@en;
   skos:topConceptOf <http://purl.org/pact_funders> .
 
 vocab:1004 a skos:Concept;
-  skos:altLabel "vocab.1001"@en, "vocab.1007"@en;
+  skos:altLabel "vocab.1000"@en, "vocab.1007"@en;
   skos:inScheme <http://purl.org/pact_funders>;
   skos:prefLabel "unspecified"@en;
   skos:topConceptOf <http://purl.org/pact_funders> .
 
 vocab:1005 a skos:Concept;
-  skos:altLabel "vocab.1001"@en, "vocab.1007"@en;
+  skos:altLabel "vocab.1000"@en, "vocab.1007"@en;
   skos:inScheme <http://purl.org/pact_funders>;
   skos:prefLabel "not applicable"@en;
   skos:topConceptOf <http://purl.org/pact_funders> .
 
 vocab:1006 a skos:Concept;
-  skos:altLabel "vocab.1001"@en, "vocab.1007"@en;
+  skos:altLabel "vocab.1000"@en, "vocab.1007"@en;
   skos:inScheme <http://purl.org/pact_funders>;
   skos:prefLabel "not known"@en;
   skos:topConceptOf <http://purl.org/pact_funders> .
