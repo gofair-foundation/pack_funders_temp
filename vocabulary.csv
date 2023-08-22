@@ -18,15 +18,15 @@ dct:creator,,An ORCID ID of the vocabulary creator
 dct:rights,https://spdx.org/licenses/CC0-1.0,License under which the vocabulary is provided
 dct:hasVersion^^xsd:string,0.1.0,Vocabulary version
 dct:created^^xsd:datetime,2022-06-01T00:00:00+00:00,Date when vocabulary was initially created
-dct:modified^^xsd:datetime,2023-08-22T12:07:50+00:00,Automatic update when vocabulary is updated
+dct:modified^^xsd:datetime,2023-08-22T13:09:45+00:00,Automatic update when vocabulary is updated
 Identifier,"skos:prefLabel@en(id=""label"")","skos:altLabel(separator="","")","skos:broader(separator="","")",skos:definition@en,"dct:source(separator="","")","skos:exactMatch(separator="","")","skos:closeMatch(separator="","")","skos:broadMatch(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")","puv:statistic(separator="","")","puv:usesMethod(separator="","")","sosa:madeBySensor(separator="","")","puv:uom(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,dct:modified^^xsd:date,dct:created^^xsd:date,"dct:creator(separator="","")","dct:contributor(separator="","")"
 vocab:1000,grant type
 vocab:1001,new,,vocab:1000
 vocab:1002,repurposed,,vocab:1000
 vocab:1003,supplemented,,vocab:1000
 vocab:1004,unspecified,,"vocab:1000,vocab:1007,vocab:1020,vocab:1024,vocab:1037,vocab:1050,vocab:1078,vocab:1089,vocab:1099,vocab:1100,vocab:1147,vocab:1148,vocab:1154"
-vocab:1005,not applicable,,"vocab:1000,vocab:1007,vocab:1020,vocab:1024,vocab:1037,vocab:1050,vocab:1058,vocab:1078,vocab:1147,vocab:1148,vocab:1154"
-vocab:1006,not known,,"vocab:1000,vocab:1007,vocab:1020,vocab:1024,vocab:1037,vocab:1050,vocab:1058,vocab:1078,vocab:1089,vocab:1099,vocab:1100,vocab:1154"
+vocab:1005,not applicable,,"vocab:1000,vocab:1007,vocab:1020,vocab:1024,vocab:1037,vocab:1050,vocab:1058,vocab:1078,vocab:1147,vocab:1148,vocab:1154,vocab:1178"
+vocab:1006,not known,,"vocab:1000,vocab:1007,vocab:1020,vocab:1024,vocab:1037,vocab:1050,vocab:1058,vocab:1078,vocab:1089,vocab:1099,vocab:1100,vocab:1154,vocab:1178"
 vocab:1007,age group
 vocab:1008,adults,,vocab:1007,,http://purl.org/zonmw/covid19/10038
 vocab:1009,babies,,vocab:1007,,http://purl.org/zonmw/covid19/10038
@@ -77,7 +77,7 @@ vocab:1053,invertebrates,,vocab:1050
 vocab:1054,bacteria,,vocab:1050
 vocab:1055,viruses,,vocab:1050
 vocab:1056,organism forms,,vocab:1050
-vocab:1057,other,,"vocab:1050,vocab:1058,vocab:1089"
+vocab:1057,other,,"vocab:1050,vocab:1058,vocab:1089,vocab:1166,vocab:1178"
 vocab:1058,studytype
 vocab:1059,case reports,,vocab:1058
 vocab:1060,clinical conference,,vocab:1058
@@ -175,15 +175,33 @@ vocab:1151,partner organization country,,vocab:1148
 vocab:1152,research institution name,,vocab:1147
 vocab:1153,research institution location,,vocab:1147
 vocab:1154,WHO GHO bservatory Framework
-vocab:1155,Cause,,vocab:1154
-vocab:1156,Solution,,vocab:1154
-vocab:1157,Drug Development,,vocab:1152
-vocab:1158,Diagnostics/Screening,,vocab:1152
-vocab:1159,Device,,vocab:1152
-vocab:1160,Vaccine,,vocab:1152
-vocab:1161,Vector Control,,vocab:1152
-vocab:1162,Basic Science,,vocab:1152
-vocab:1163,Unspecified,,vocab:1152
-vocab:1164,Implementation,,vocab:1152
-vocab:1165,Evaluation,,vocab:1152
-vocab:1166,No research category assigned,,vocab:1152
+vocab:1155,cause,,vocab:1154
+vocab:1156,solution,,vocab:1154
+vocab:1157,drug development,,vocab:1154
+vocab:1158,diagnostics/screening,,vocab:1154
+vocab:1159,device,,vocab:1154
+vocab:1160,vaccine,,vocab:1154
+vocab:1161,vector control,,vocab:1154
+vocab:1162,basic Science,,vocab:1154
+vocab:1163,implementation,,vocab:1154
+vocab:1164,evaluation,,vocab:1154
+vocab:1165,no research category assigned,,vocab:1154
+vocab:1166,disease
+vocab:1167,COVID-19,,vocab:1166,,http://purl.org/zonmw/covid19/10270
+vocab:1168,Crimean-Congo haemorrhagic fever,,vocab:1166
+vocab:1169,Ebola virus disease,,vocab:1166
+vocab:1170,Marburg virus disease,,vocab:1166
+vocab:1171,Lassa fever,,vocab:1166
+vocab:1172,Middle East Respiratory Syndrome Coronavirus (MERS-CoV),,vocab:1166
+vocab:1173,Severe Acute Respiratory Syndrome (SARS),,vocab:1166
+vocab:1174,Nipah and henipaviral disease,,vocab:1166
+vocab:1175,Rift Valley Fever,,vocab:1166
+vocab:1176,Zika,,vocab:1166
+vocab:1177,Congenital Zika virus disease,,vocab:1166
+vocab:1178,pathogens
+vocab:1179,Coronavirus,,vocab:1178
+vocab:1180,SARS-CoV,,vocab:1178
+vocab:1181,SARSr-CoV,,vocab:1178
+vocab:1182,SARS-CoV-2,,vocab:1178,,http://purl.org/zonmw/covid19/10269
+vocab:1183,SARS-CoV-1,,vocab:1178
+vocab:1184,MERS-CoV,,vocab:1178
