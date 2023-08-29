@@ -1,16 +1,18 @@
 ConceptScheme URI,http://purl.org/pact_funders,Main GUPRI (i.e. PID) under which all terms are defined. Preference is to use PURLs or W3IDs as they provide permanent resolvable identifiers.
-PREFIX,vocab,http://purl.org/pact_funders/,Prefix for our controlled vocabulary since it is rather tedious to write long URLs all the time
-PREFIX,skos,http://www.w3.org/2004/02/skos/core#,Prefix for SKOS Onotlogy is which our base for defining SKOS based controlled vocabulary
-PREFIX,pav,http://purl.org/pav/ ,"Prefix for Provenance, Authoring and Versioning Onotlogy which properties such as version and createdOn we will use to describe our controlled vocabulary"
-PREFIX,dct,http://purl.org/dc/terms/ ,"Prefix for Dublin Core (Terms) Ontology which properties such as title, description, rights, source, etc. we will use to describe our controlled vocabulary as well to define its terms"
-PREFIX,iop,https://w3id.org/iadopt/ont/,I-ADOPT Ontology
-PREFIX,puv,https://w3id.org/env/puv#,"A simple ontology which implements the Parameter Usage 
+PREFIX,vocab,http://purl.org/pact_funders/,,Prefix for our controlled vocabulary since it is rather tedious to write long URLs all the time
+PREFIX,skos,http://www.w3.org/2004/02/skos/core#,,Prefix for SKOS Onotlogy is which our base for defining SKOS based controlled vocabulary
+PREFIX,pav,http://purl.org/pav/ ,,"Prefix for Provenance, Authoring and Versioning Onotlogy which properties such as version and createdOn we will use to describe our controlled vocabulary"
+PREFIX,dct,http://purl.org/dc/terms/ ,,"Prefix for Dublin Core (Terms) Ontology which properties such as title, description, rights, source, etc. we will use to describe our controlled vocabulary as well to define its terms"
+PREFIX,iop,https://w3id.org/iadopt/ont/,,I-ADOPT Ontology
+PREFIX,puv,https://w3id.org/env/puv#,,"A simple ontology which implements the Parameter Usage 
 Vocabulary semantic model, as described at 
 https://github.com/nvs-vocabs/P01."
-PREFIX,sosa,http://www.w3.org/ns/sosa/,Semantic Sensor Network Ontology
+PREFIX,sosa,http://www.w3.org/ns/sosa/,,Semantic Sensor Network Ontology
 PREFIX,xsd,http://www.w3.org/2001/XMLSchema#
-PREFIX,qudt,http://qudt.org/schema/qudt/,"Prefix for ""Quantity, Unit, Dimension and Type"" schema that is used to model physical units."
-PREFIX,unit,http://qudt.org/vocab/unit/,"Prefix for QUDT Vocabulary of Units which terms we will use to semantically define units of measurements for terms (i.e., variables) we are defining "
+PREFIX,qudt,http://qudt.org/schema/qudt/,,"Prefix for ""Quantity, Unit, Dimension and Type"" schema that is used to model physical units."
+PREFIX,unit,http://qudt.org/vocab/unit/,,"Prefix for QUDT Vocabulary of Units which terms we will use to semantically define units of measurements for terms (i.e., variables) we are defining "
+PREFIX,rdf,http://www.w3.org/1999/02/22-rdf-syntax-ns#
+PREFIX,rdfs,http://www.w3.org/2000/01/rdf-schema#
 dct:title,Vocabulary title,Title of the vocabulary
 dct:description,Vocabulary description,Description of the controlled vocabulary
 foaf:homepage,URL to the community developing vocab,Home page of community creating vocabulary
@@ -18,190 +20,212 @@ dct:creator,,An ORCID ID of the vocabulary creator
 dct:rights,https://spdx.org/licenses/CC0-1.0,License under which the vocabulary is provided
 dct:hasVersion^^xsd:string,0.1.0,Vocabulary version
 dct:created^^xsd:datetime,2022-06-01T00:00:00+00:00,Date when vocabulary was initially created
-dct:modified^^xsd:datetime,2023-08-22T13:09:45+00:00,Automatic update when vocabulary is updated
-Identifier,"skos:prefLabel@en(id=""label"")","skos:altLabel(separator="","")","skos:broader(separator="","")",skos:definition@en,"dct:source(separator="","")","skos:exactMatch(separator="","")","skos:closeMatch(separator="","")","skos:broadMatch(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")","puv:statistic(separator="","")","puv:usesMethod(separator="","")","sosa:madeBySensor(separator="","")","puv:uom(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,dct:modified^^xsd:date,dct:created^^xsd:date,"dct:creator(separator="","")","dct:contributor(separator="","")"
+dct:modified^^xsd:datetime,2023-08-29T15:51:02+00:00,Automatic update when vocabulary is updated
+Identifier,"skos:prefLabel@en(id=""label"")","skos:altLabel(separator="","")",rdf:type,"skos:broader(separator="","")",skos:definition@en,"dct:source(separator="","")","skos:exactMatch(separator="","")","skos:closeMatch(separator="","")","skos:broadMatch(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")","puv:statistic(separator="","")","puv:usesMethod(separator="","")","sosa:madeBySensor(separator="","")","puv:uom(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,dct:modified^^xsd:date,dct:created^^xsd:date,"dct:creator(separator="","")","dct:contributor(separator="","")"
 vocab:1000,grant type
-vocab:1001,new,,vocab:1000
-vocab:1002,repurposed,,vocab:1000
-vocab:1003,supplemented,,vocab:1000
-vocab:1004,unspecified,,"vocab:1000,vocab:1007,vocab:1020,vocab:1024,vocab:1037,vocab:1050,vocab:1078,vocab:1089,vocab:1099,vocab:1100,vocab:1147,vocab:1148,vocab:1154"
-vocab:1005,not applicable,,"vocab:1000,vocab:1007,vocab:1020,vocab:1024,vocab:1037,vocab:1050,vocab:1058,vocab:1078,vocab:1147,vocab:1148,vocab:1154,vocab:1178"
-vocab:1006,not known,,"vocab:1000,vocab:1007,vocab:1020,vocab:1024,vocab:1037,vocab:1050,vocab:1058,vocab:1078,vocab:1089,vocab:1099,vocab:1100,vocab:1154,vocab:1178"
+vocab:1001,new,,,vocab:1000
+vocab:1002,repurposed,,,vocab:1000
+vocab:1003,supplemented,,,vocab:1000
+vocab:1004,unspecified,,,"vocab:1000,vocab:1007,vocab:1015,vocab:1019,vocab:1032,vocab:1045,vocab:1073,vocab:1084,vocab:1094,vocab:1101,vocab:1104,vocab:1107"
+vocab:1005,not applicable,,,"vocab:1000,vocab:1007,vocab:1015,vocab:1019,vocab:1032,vocab:1045,vocab:1053,vocab:1073,vocab:1101,vocab:1104,vocab:1107,vocab:1131"
+vocab:1006,not known,,,"vocab:1000,vocab:1007,vocab:1015,vocab:1019,vocab:1032,vocab:1045,vocab:1053,vocab:1073,vocab:1084,vocab:1094,vocab:1107,vocab:1131"
 vocab:1007,age group
-vocab:1008,adults,,vocab:1007,,http://purl.org/zonmw/covid19/10038
-vocab:1009,babies,,vocab:1007,,http://purl.org/zonmw/covid19/10038
-vocab:1010,elderly,,vocab:1007,,http://purl.org/zonmw/covid19/10038
-vocab:1011,neonates,,vocab:1007,,http://purl.org/zonmw/covid19/10038
-vocab:1012,newborns,,vocab:1007,,http://purl.org/zonmw/covid19/10038
-vocab:1013,prematures,,vocab:1007,,http://purl.org/zonmw/covid19/10038
-vocab:1014,primary school children,,vocab:1007,,http://purl.org/zonmw/covid19/10038
-vocab:1015,small children,,vocab:1007,,http://purl.org/zonmw/covid19/10038
-vocab:1016,teenager,,vocab:1007,,http://purl.org/zonmw/covid19/10038
-vocab:1017,very elderly,,vocab:1007,,http://purl.org/zonmw/covid19/10038
-vocab:1018,young adults,,vocab:1007,,http://purl.org/zonmw/covid19/10038
-vocab:1019,young people,,vocab:1007,,http://purl.org/zonmw/covid19/10038
-vocab:1020,rurality
-vocab:1021,rural population,,vocab:1020
-vocab:1022,suburban population,,vocab:1020
-vocab:1023,urban population,,vocab:1020
-vocab:1024,vulnerable populations
-vocab:1025,disabled persons,,vocab:1024
-vocab:1026,drug users,,vocab:1024
-vocab:1027,refugees,,vocab:1024
-vocab:1028,indigenous people,,vocab:1024
-vocab:1029,sexual and gender minorities,,vocab:1024
-vocab:1030,prisoners,,vocab:1024
-vocab:1031,sex workers,,vocab:1024
-vocab:1032,smokers,,vocab:1024
-vocab:1033,women,,vocab:1024
-vocab:1034,pregnant women,,vocab:1024
-vocab:1035,minority communities unspecified,,vocab:1024
-vocab:1036,vulnerable populations unspecified,,vocab:1024
-vocab:1037,occupational groups
-vocab:1038,farmers,,vocab:1037
-vocab:1039,emergency responders,,vocab:1037
-vocab:1040,military personnel,,vocab:1037
-vocab:1041,social workers,,vocab:1037
-vocab:1042,caregivers,,vocab:1037
-vocab:1043,health personnel,,vocab:1037
-vocab:1044,hospital personnel,,vocab:1037
-vocab:1045,nurses and nursing staff,,vocab:1037
-vocab:1046,physicians,,vocab:1037
-vocab:1047,dentists and dental staff,,vocab:1037
-vocab:1048,veterinarians,,vocab:1037
-vocab:1049,volunteers,,vocab:1037
-vocab:1050,studySubject
-vocab:1051,humans,,vocab:1050
-vocab:1052,animals,,vocab:1050
-vocab:1053,invertebrates,,vocab:1050
-vocab:1054,bacteria,,vocab:1050
-vocab:1055,viruses,,vocab:1050
-vocab:1056,organism forms,,vocab:1050
-vocab:1057,other,,"vocab:1050,vocab:1058,vocab:1089,vocab:1166,vocab:1178"
-vocab:1058,studytype
-vocab:1059,case reports,,vocab:1058
-vocab:1060,clinical conference,,vocab:1058
-vocab:1061,clinical study,,vocab:1058
-vocab:1062,clinical trial,,vocab:1058
-vocab:1063,comparative study,,vocab:1058
-vocab:1064,consensus development conference,,vocab:1058
-vocab:1065,evaluation study,,vocab:1058
-vocab:1066,meta-analysis,,vocab:1058
-vocab:1067,multicenter study,,vocab:1058
-vocab:1068,scientific integrity review,,vocab:1058
-vocab:1069,systematic review,,vocab:1058
-vocab:1070,validation study,,vocab:1058
-vocab:1071,observational study,,vocab:1058
-vocab:1072,biological specimen banks,,vocab:1058
-vocab:1073,policy report,,vocab:1058
-vocab:1074,"study, design unspecified",,vocab:1058
-vocab:1075,review,,vocab:1058
-vocab:1076,laboratory work,,vocab:1058
-vocab:1077,secondary data analysis,,vocab:1058
-vocab:1078,clinical trial phase
-vocab:1079,adaptive clinical trial,,vocab:1078
-vocab:1080,"clinical trial, phase i",,vocab:1078
-vocab:1081,"clinical trial, phase ii",,vocab:1078
-vocab:1082,"clinical trial, phase iii",,vocab:1078
-vocab:1083,"clinical trial, phase iv",,vocab:1078
-vocab:1084,controlled clinical trial,,vocab:1078
-vocab:1085,randomized controlled trial,,vocab:1078
-vocab:1086,clinical trial protocol,,vocab:1078
-vocab:1087,"clinical trial, veterinary",,vocab:1078
-vocab:1088,"randomized controlled trial, veterinary",,vocab:1078
-vocab:1089,ethnicity
-vocab:1090,asian,,vocab:1089
-vocab:1091,black,,vocab:1089
-vocab:1092,white,,vocab:1089
-vocab:1093,mixed,,vocab:1089
-vocab:1094,project information
-,funding organization name,,vocab:1094
-vocab:1096,funder CrossRefID,,vocab:1094
-vocab:1097,funder acronym,,vocab:1094
-vocab:1098,Country,,vocab:1094
-vocab:1099,regions,,vocab:1094
-vocab:1100,subregions,,vocab:1094
-vocab:1101,africa,,vocab:1099
-vocab:1102,americas,,vocab:1099
-vocab:1103,south-east asia,,vocab:1099
-vocab:1104,europe,,vocab:1099
-vocab:1105,eastern mediterranean,,vocab:1099
-vocab:1106,western pacific,,vocab:1099
-vocab:1107,china,,vocab:1100
-vocab:1108,established market economies,,vocab:1100
-vocab:1109,formerly socialist economies of europe,,vocab:1100
-vocab:1110,india,,vocab:1100
-vocab:1111,latin america and the caribbean,,vocab:1100
-vocab:1112,middle east crescent,,vocab:1100
-vocab:1113,other asia and islands,,vocab:1100
-vocab:1114,sub-saharan africa,,vocab:1100
-vocab:1115,global,,vocab:1100
-vocab:1116,eastern asia,,vocab:1100
-vocab:1117,southern asia,,vocab:1100
-vocab:1118,low and middle income countries of the african region,,vocab:1100
-vocab:1119,low and middle income countries of the americas,,vocab:1100
-vocab:1120,low and middle income countries of the eastern mediterranean region,,vocab:1100
-vocab:1121,low and middle income countries of the european region,,vocab:1100
-vocab:1122,low and middle income countries of the south-east asia region,,vocab:1100
-vocab:1123,world,,vocab:1100
-vocab:1124,low and middle income countries of the western pacific region,,vocab:1100
-vocab:1125,high-income countries,,vocab:1100
-vocab:1126,asia pacific high-income,,vocab:1100
-vocab:1127,asia central,,vocab:1100
-vocab:1128,asia east,,vocab:1100
-vocab:1129,asia south,,vocab:1100
-vocab:1130,asia southeast,,vocab:1100
-vocab:1131,australasia,,vocab:1100
-vocab:1132,caribbean,,vocab:1100
-vocab:1133,europe central,,vocab:1100
-vocab:1134,europe eastern,,vocab:1100
-vocab:1135,europe western,,vocab:1100
-vocab:1136,latin america andean,,vocab:1100
-vocab:1137,latin america central,,vocab:1100
-vocab:1138,latin america southern,,vocab:1100
-vocab:1139,latin america tropical,,vocab:1100
-vocab:1140,north africa/middle east,,vocab:1100
-vocab:1141,north america high-income,,vocab:1100
-vocab:1142,oceania,,vocab:1100
-vocab:1143,sub-saharan africa central,,vocab:1100
-vocab:1144,sub-saharan africa east,,vocab:1100
-vocab:1145,sub-saharan africa southern,,vocab:1100
-vocab:1146,sub-saharan africa west,,vocab:1100
-vocab:1147,research institution
-vocab:1148,partner organization
-vocab:1149,partner organization name,,vocab:1148
-vocab:1150,partner organization identification,,vocab:1148
-vocab:1151,partner organization country,,vocab:1148
-vocab:1152,research institution name,,vocab:1147
-vocab:1153,research institution location,,vocab:1147
-vocab:1154,WHO GHO bservatory Framework
-vocab:1155,cause,,vocab:1154
-vocab:1156,solution,,vocab:1154
-vocab:1157,drug development,,vocab:1154
-vocab:1158,diagnostics/screening,,vocab:1154
-vocab:1159,device,,vocab:1154
-vocab:1160,vaccine,,vocab:1154
-vocab:1161,vector control,,vocab:1154
-vocab:1162,basic Science,,vocab:1154
-vocab:1163,implementation,,vocab:1154
-vocab:1164,evaluation,,vocab:1154
-vocab:1165,no research category assigned,,vocab:1154
-vocab:1166,disease
-vocab:1167,COVID-19,,vocab:1166,,http://purl.org/zonmw/covid19/10270
-vocab:1168,Crimean-Congo haemorrhagic fever,,vocab:1166
-vocab:1169,Ebola virus disease,,vocab:1166
-vocab:1170,Marburg virus disease,,vocab:1166
-vocab:1171,Lassa fever,,vocab:1166
-vocab:1172,Middle East Respiratory Syndrome Coronavirus (MERS-CoV),,vocab:1166
-vocab:1173,Severe Acute Respiratory Syndrome (SARS),,vocab:1166
-vocab:1174,Nipah and henipaviral disease,,vocab:1166
-vocab:1175,Rift Valley Fever,,vocab:1166
-vocab:1176,Zika,,vocab:1166
-vocab:1177,Congenital Zika virus disease,,vocab:1166
-vocab:1178,pathogens
-vocab:1179,Coronavirus,,vocab:1178
-vocab:1180,SARS-CoV,,vocab:1178
-vocab:1181,SARSr-CoV,,vocab:1178
-vocab:1182,SARS-CoV-2,,vocab:1178,,http://purl.org/zonmw/covid19/10269
-vocab:1183,SARS-CoV-1,,vocab:1178
-vocab:1184,MERS-CoV,,vocab:1178
+vocab:1008,adolescent,,,vocab:1007,,http://purl.org/zonmw/covid19/10038
+vocab:1009,adult,,,vocab:1007,,http://purl.org/zonmw/covid19/10038
+vocab:1010,aged,,,vocab:1007,,http://purl.org/zonmw/covid19/10038
+vocab:1011,frail elderly,,,vocab:1007,,http://purl.org/zonmw/covid19/10038
+vocab:1012,child,,,vocab:1007,,http://purl.org/zonmw/covid19/10038
+vocab:1013,infant,,,vocab:1007,,http://purl.org/zonmw/covid19/10038
+vocab:1014,newborn,,,vocab:1007,,http://purl.org/zonmw/covid19/10038
+vocab:1015,rurality
+vocab:1016,rural population,,,vocab:1015
+vocab:1017,suburban population,,,vocab:1015
+vocab:1018,urban population,,,vocab:1015
+vocab:1019,vulnerable populations
+vocab:1020,disabled persons,,,vocab:1019
+vocab:1021,drug users,,,vocab:1019
+vocab:1022,refugees,,,vocab:1019
+vocab:1023,indigenous people,,,vocab:1019
+vocab:1024,sexual and gender minorities,,,vocab:1019
+vocab:1025,prisoners,,,vocab:1019
+vocab:1026,sex workers,,,vocab:1019
+vocab:1027,smokers,,,vocab:1019
+vocab:1028,women,,,vocab:1019
+vocab:1029,pregnant women,,,vocab:1019
+vocab:1030,minority communities unspecified,,,vocab:1019
+vocab:1031,vulnerable populations unspecified,,,vocab:1019
+vocab:1032,occupational groups
+vocab:1033,farmers,,,vocab:1032
+vocab:1034,emergency responders,,,vocab:1032
+vocab:1035,military personnel,,,vocab:1032
+vocab:1036,social workers,,,vocab:1032
+vocab:1037,caregivers,,,vocab:1032
+vocab:1038,health personnel,,,vocab:1032
+vocab:1039,hospital personnel,,,vocab:1032
+vocab:1040,nurses and nursing staff,,,vocab:1032
+vocab:1041,physicians,,,vocab:1032
+vocab:1042,dentists and dental staff,,,vocab:1032
+vocab:1043,veterinarians,,,vocab:1032
+vocab:1044,volunteers,,,vocab:1032
+vocab:1045,studys ubject
+vocab:1046,humans,,,vocab:1045
+vocab:1047,animals,,,vocab:1045
+vocab:1048,invertebrates,,,vocab:1045
+vocab:1049,bacteria,,,vocab:1045
+vocab:1050,viruses,,,vocab:1045
+vocab:1051,organism forms,,,vocab:1045
+vocab:1052,other,,,"vocab:1045,vocab:1053,vocab:1084,vocab:1119,vocab:1131"
+vocab:1053,study type
+vocab:1054,case reports,,,vocab:1053
+vocab:1055,clinical conference,,,vocab:1053
+vocab:1056,clinical study,,,vocab:1053
+vocab:1057,clinical trial,,,vocab:1053
+vocab:1058,comparative study,,,vocab:1053
+vocab:1059,consensus development conference,,,vocab:1053
+vocab:1060,evaluation study,,,vocab:1053
+vocab:1061,meta-analysis,,,vocab:1053
+vocab:1062,multicenter study,,,vocab:1053
+vocab:1063,scientific integrity review,,,vocab:1053
+vocab:1064,systematic review,,,vocab:1053
+vocab:1065,validation study,,,vocab:1053
+vocab:1066,observational study,,,vocab:1053
+vocab:1067,biological specimen banks,,,vocab:1053
+vocab:1068,policy report,,,vocab:1053
+vocab:1069,"study, design unspecified",,,vocab:1053
+vocab:1070,review,,,vocab:1053
+vocab:1071,laboratory work,,,vocab:1053
+vocab:1072,secondary data analysis,,,vocab:1053
+vocab:1073,clinical trial phase
+vocab:1074,adaptive clinical trial,,,vocab:1073
+vocab:1075,"clinical trial, phase i",,,vocab:1073
+vocab:1076,"clinical trial, phase ii",,,vocab:1073
+vocab:1077,"clinical trial, phase iii",,,vocab:1073
+vocab:1078,"clinical trial, phase iv",,,vocab:1073
+vocab:1079,controlled clinical trial,,,vocab:1073
+vocab:1080,randomized controlled trial,,,vocab:1073
+vocab:1081,clinical trial protocol,,,vocab:1073
+vocab:1082,"clinical trial, veterinary",,,vocab:1073
+vocab:1083,"randomized controlled trial, veterinary",,,vocab:1073
+vocab:1084,ethnicity
+vocab:1085,asian,,,vocab:1084
+vocab:1086,black,,,vocab:1084
+vocab:1087,white,,,vocab:1084
+vocab:1088,mixed,,,vocab:1084
+vocab:1089,project information
+vocab:1090,funding organization name,,,vocab:1089
+vocab:1091,funder CrossRefID,,,vocab:1089
+vocab:1092,funder acronym,,,vocab:1089
+vocab:1093,Country,,,vocab:1089
+vocab:1094,regions,,,vocab:1089
+vocab:1095,africa,,,vocab:1094
+vocab:1096,americas,,,vocab:1094
+vocab:1097,south-east asia,,,vocab:1094
+vocab:1098,europe,,,vocab:1094
+vocab:1099,eastern mediterranean,,,vocab:1094
+vocab:1100,western pacific,,,vocab:1094
+vocab:1101,partner organization
+vocab:1102,partner organization name,,,vocab:1101
+vocab:1103,partner organization country,,,vocab:1101
+vocab:1104,research institution
+vocab:1105,research institution name,,,vocab:1104
+vocab:1106,research institution country,,,vocab:1104
+vocab:1107,WHO GHO bservatory Framework
+vocab:1108,cause,,,vocab:1107
+vocab:1109,solution,,,vocab:1107
+vocab:1110,drug development,,,vocab:1107
+vocab:1111,diagnostics/screening,,,vocab:1107
+vocab:1112,device,,,vocab:1107
+vocab:1113,vaccine,,,vocab:1107
+vocab:1114,vector control,,,vocab:1107
+vocab:1115,basic Science,,,vocab:1107
+vocab:1116,implementation,,,vocab:1107
+vocab:1117,evaluation,,,vocab:1107
+vocab:1118,no research category assigned,,,vocab:1107
+vocab:1119,disease
+vocab:1120,COVID-19,,,vocab:1119,,http://purl.org/zonmw/covid19/10270
+vocab:1121,Crimean-Congo haemorrhagic fever,,,vocab:1119
+vocab:1122,Ebola virus disease,,,vocab:1119
+vocab:1123,Marburg virus disease,,,vocab:1119
+vocab:1124,Lassa fever,,,vocab:1119
+vocab:1125,Middle East Respiratory Syndrome Coronavirus (MERS-CoV),,,vocab:1119
+vocab:1126,Severe Acute Respiratory Syndrome (SARS),,,vocab:1119
+vocab:1127,Nipah and henipaviral disease,,,vocab:1119
+vocab:1128,Rift Valley Fever,,,vocab:1119
+vocab:1129,Zika,,,vocab:1119
+vocab:1130,Congenital Zika virus disease,,,vocab:1119
+vocab:1131,pathogens
+vocab:1132,Coronavirus,,,vocab:1131
+vocab:1133,SARS-CoV,,,vocab:1131
+vocab:1134,SARSr-CoV,,,vocab:1131
+vocab:1135,SARS-CoV-2,,,vocab:1131,,http://purl.org/zonmw/covid19/10269
+vocab:1136,SARS-CoV-1,,,vocab:1131
+vocab:1137,MERS-CoV,,,vocab:1131
+vocab:1138,investigator
+vocab:1139,investigator identification,,,vocab:1138
+vocab:1140,investigator ORCID,,,vocab:1138
+vocab:1141,investigator first name,,,vocab:1138
+vocab:1142,investigator last name,,skos:Concept,vocab:1138
+vocab:1143,has grant id,,owl:ObjectProperty
+vocab:1144,has unique database reference number ,,owl:ObjectProperty
+vocab:1145,has grant title original,,owl:ObjectProperty
+vocab:1146,has grant title eng,,owl:ObjectProperty
+vocab:1147,has grant number,,owl:ObjectProperty
+vocab:1148,has grant region,,owl:ObjectProperty
+vocab:1149,has grant country,,owl:ObjectProperty
+vocab:1150,has grant subregion,,owl:ObjectProperty
+vocab:1151,has grant amount original,,owl:ObjectProperty
+vocab:1152,has grant currency,,owl:ObjectProperty
+vocab:1153,has currency exchange rate usd,,owl:ObjectProperty
+vocab:1154,has grant amount converted,,owl:ObjectProperty
+vocab:1155,has grant type,,owl:ObjectProperty
+vocab:1156,has abstract,,owl:ObjectProperty
+vocab:1157,has lay summary,,owl:ObjectProperty
+vocab:1158,has oda funding used,,owl:ObjectProperty
+vocab:1159,"has dd, grant start day",,owl:ObjectProperty
+vocab:1160,has grant start month,,owl:ObjectProperty
+vocab:1161,has start year,,owl:ObjectProperty
+vocab:1162,has grant end day,,owl:ObjectProperty
+vocab:1163,has grant end month,,owl:ObjectProperty
+vocab:1164,has grant end year,,owl:ObjectProperty
+vocab:1165,has study subject,,owl:ObjectProperty
+vocab:1166,has age groups,,owl:ObjectProperty
+vocab:1167,has rurality,,owl:ObjectProperty
+vocab:1168,has vulnerable populations,,owl:ObjectProperty
+vocab:1169,has occupational groups,,owl:ObjectProperty
+vocab:1170,has study type,,owl:ObjectProperty
+vocab:1171,has ethnicity,,owl:ObjectProperty
+vocab:1172,has clinical trial phase,,owl:ObjectProperty
+vocab:1173,has pathogen,,owl:ObjectProperty
+vocab:1174,has disease,,owl:ObjectProperty
+vocab:1175,has WHO observatory framework,,owl:ObjectProperty
+vocab:1176,has keyword,,owl:ObjectProperty
+vocab:1177,has EuPubMedSource,,owl:ObjectProperty
+vocab:1178,has funder id,,owl:ObjectProperty
+vocab:1179,has funder cross ref id,,owl:ObjectProperty
+vocab:1180,has funding organisation name,,owl:ObjectProperty
+vocab:1181,has funder acronym,,owl:ObjectProperty
+vocab:1182,has funder country,,owl:ObjectProperty
+vocab:1183,has funder region,,owl:ObjectProperty
+vocab:1184,has funder subregion,,owl:ObjectProperty
+vocab:1185,has investigator id,,owl:ObjectProperty
+vocab:1186,has investigator orcid,,owl:ObjectProperty
+vocab:1187,has investigator first name,,owl:ObjectProperty
+vocab:1188,has investigator last name,,owl:ObjectProperty
+vocab:1189,has research institution id,,owl:ObjectProperty
+vocab:1190,has research institition name,,owl:ObjectProperty
+vocab:1191,has research institition rorid,,owl:ObjectProperty
+vocab:1192,has research institution country,,owl:ObjectProperty
+vocab:1193,has research institution region,,owl:ObjectProperty
+vocab:1194,has research institution subregion,,owl:ObjectProperty
+vocab:1195,has partner organisation id,,owl:ObjectProperty
+vocab:1196,has partner organisation name,,owl:ObjectProperty
+vocab:1197,has partner organisation rorid,,owl:ObjectProperty
+vocab:1198,has partner organisation country,,owl:ObjectProperty
+vocab:1199,has partner organisation region,,owl:ObjectProperty
+vocab:1200,has research category id,,owl:ObjectProperty
+vocab:1201,has primary research Cat,,owl:ObjectProperty
+vocab:1202,has research Cat,,owl:ObjectProperty
+vocab:1203,has primary research subcat,,owl:ObjectProperty
+vocab:1204,has research subcat,,owl:ObjectProperty
+vocab:1205,has policy roadmap,,owl:ObjectProperty
+vocab:1206,has special tag,,owl:ObjectProperty
