@@ -27,12 +27,12 @@
   dct:created "2022-06-01T00:00:00+00:00"^^xsd:datetime;
   dct:description "Vocabulary description"@en;
   dct:hasVersion "0.1.0";
-  dct:modified "2023-08-30T15:11:55+00:00"^^xsd:datetime;
+  dct:modified "2023-08-30T15:48:08+00:00"^^xsd:datetime;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "Vocabulary title"@en;
   skos:hasTopConcept vocab:1000, vocab:1007, vocab:1015, vocab:1019, vocab:1032, vocab:1045,
     vocab:1053, vocab:1072, vocab:1077, vocab:1089, vocab:1091, vocab:1093, vocab:1094,
-    vocab:1106, vocab:1118, vocab:1139;
+    vocab:1106, vocab:1118, vocab:1139, vocab:1207;
   foaf:homepage "URL to the community developing vocab"@en .
 
 vocab:1000 a skos:Concept;
@@ -321,7 +321,7 @@ vocab:1051 a skos:Concept;
 
 vocab:1052 a skos:Concept;
   skos:broader vocab:1045, vocab:1053, vocab:1072, vocab:1106, vocab:1119, vocab:1125,
-    vocab:1128, vocab:113, vocab:1133, vocab:1135, vocab:1137;
+    vocab:1128, vocab:113, vocab:1133, vocab:1135, vocab:1137, vocab:1207;
   skos:inScheme <http://purl.org/pact_funders>;
   skos:prefLabel "other"@en .
 
@@ -996,5 +996,31 @@ vocab:1205 a owl:ObjectProperty;
 
 vocab:1206 a owl:ObjectProperty;
   skos:prefLabel "has special tag"@en .
+
+vocab:1207 a skos:Concept;
+  skos:inScheme <http://purl.org/pact_funders>;
+  skos:narrower vocab:1052, vocab:1208, vocab:1209, vocab:1210, vocab:1211;
+  skos:prefLabel "special tag"@en;
+  skos:topConceptOf <http://purl.org/pact_funders> .
+
+vocab:1208 a skos:Concept;
+  skos:broader vocab:1207;
+  skos:inScheme <http://purl.org/pact_funders>;
+  skos:prefLabel "gender"@en .
+
+vocab:1209 a skos:Concept;
+  skos:broader vocab:1207;
+  skos:inScheme <http://purl.org/pact_funders>;
+  skos:prefLabel "innovation"@en .
+
+vocab:1210 a skos:Concept;
+  skos:broader vocab:1207;
+  skos:inScheme <http://purl.org/pact_funders>;
+  skos:prefLabel "digital health"@en .
+
+vocab:1211 a skos:Concept;
+  skos:broader vocab:1207;
+  skos:inScheme <http://purl.org/pact_funders>;
+  skos:prefLabel "data management and data sharing"@en .
 
 vocab:113 skos:narrower vocab:1005, vocab:1006, vocab:1052 .

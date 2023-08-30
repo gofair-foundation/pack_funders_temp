@@ -20,7 +20,7 @@ dct:creator,,An ORCID ID of the vocabulary creator
 dct:rights,https://spdx.org/licenses/CC0-1.0,License under which the vocabulary is provided
 dct:hasVersion^^xsd:string,0.1.0,Vocabulary version
 dct:created^^xsd:datetime,2022-06-01T00:00:00+00:00,Date when vocabulary was initially created
-dct:modified^^xsd:datetime,2023-08-30T15:11:55+00:00,Automatic update when vocabulary is updated
+dct:modified^^xsd:datetime,2023-08-30T15:48:08+00:00,Automatic update when vocabulary is updated
 Identifier,"skos:prefLabel@en(id=""label"")","skos:altLabel(separator="","")",rdf:type,"skos:broader(separator="","")",skos:definition@en,"dct:source(separator="","")","skos:exactMatch(separator="","")","skos:closeMatch(separator="","")","skos:broadMatch(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")","puv:statistic(separator="","")","puv:usesMethod(separator="","")","sosa:madeBySensor(separator="","")","puv:uom(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,dct:modified^^xsd:date,dct:created^^xsd:date,"dct:creator(separator="","")","dct:contributor(separator="","")"
 vocab:1000,grant type
 vocab:1001,new grant,,,vocab:1000
@@ -74,7 +74,7 @@ vocab:1048,invertebrates,,,vocab:1045
 vocab:1049,bacteria,,,vocab:1045
 vocab:1050,viruses,,,vocab:1045
 vocab:1051,organism other,,,vocab:1045
-vocab:1052,other,,,"vocab:1045,vocab:1053,vocab:1072,vocab:1106,vocab:1119,vocab:1125,vocab:1128,vocab:113,vocab:1133,vocab:1135,vocab:1137"
+vocab:1052,other,,,"vocab:1045,vocab:1053,vocab:1072,vocab:1106,vocab:1119,vocab:1125,vocab:1128,vocab:113,vocab:1133,vocab:1135,vocab:1137,vocab:1207"
 vocab:1053,study type
 vocab:1054,case reports,,,vocab:1053
 vocab:1055,clinical study,,,vocab:1053
@@ -229,3 +229,8 @@ vocab:1203,has primary research subcat,,owl:ObjectProperty
 vocab:1204,has research subcat,,owl:ObjectProperty
 vocab:1205,has policy roadmap,,owl:ObjectProperty
 vocab:1206,has special tag,,owl:ObjectProperty
+vocab:1207,special tag
+vocab:1208,gender,,,vocab:1207
+vocab:1209,innovation,,,vocab:1207
+vocab:1210,digital health,,,vocab:1207
+vocab:1211,data management and data sharing,,,vocab:1207
