@@ -27,12 +27,12 @@
   dct:created "2022-06-01T00:00:00+00:00"^^xsd:datetime;
   dct:description "Vocabulary description"@en;
   dct:hasVersion "0.1.0";
-  dct:modified "2023-08-29T15:51:02+00:00"^^xsd:datetime;
+  dct:modified "2023-08-30T15:11:55+00:00"^^xsd:datetime;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "Vocabulary title"@en;
   skos:hasTopConcept vocab:1000, vocab:1007, vocab:1015, vocab:1019, vocab:1032, vocab:1045,
-    vocab:1053, vocab:1073, vocab:1084, vocab:1089, vocab:1101, vocab:1104, vocab:1107,
-    vocab:1119, vocab:1131, vocab:1138;
+    vocab:1053, vocab:1072, vocab:1077, vocab:1089, vocab:1091, vocab:1093, vocab:1094,
+    vocab:1106, vocab:1118, vocab:1139;
   foaf:homepage "URL to the community developing vocab"@en .
 
 vocab:1000 a skos:Concept;
@@ -44,33 +44,35 @@ vocab:1000 a skos:Concept;
 vocab:1001 a skos:Concept;
   skos:broader vocab:1000;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "new"@en .
+  skos:prefLabel "new grant"@en .
 
 vocab:1002 a skos:Concept;
   skos:broader vocab:1000;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "repurposed"@en .
+  skos:prefLabel "repurposed grant"@en .
 
 vocab:1003 a skos:Concept;
   skos:broader vocab:1000;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "supplemented"@en .
+  skos:prefLabel "supplemented grant"@en .
 
 vocab:1004 a skos:Concept;
   skos:broader vocab:1000, vocab:1007, vocab:1015, vocab:1019, vocab:1032, vocab:1045,
-    vocab:1073, vocab:1084, vocab:1094, vocab:1101, vocab:1104, vocab:1107;
+    vocab:1072, vocab:1077, vocab:1089, vocab:1091, vocab:1094;
   skos:inScheme <http://purl.org/pact_funders>;
   skos:prefLabel "unspecified"@en .
 
 vocab:1005 a skos:Concept;
   skos:broader vocab:1000, vocab:1007, vocab:1015, vocab:1019, vocab:1032, vocab:1045,
-    vocab:1053, vocab:1073, vocab:1101, vocab:1104, vocab:1107, vocab:1131;
+    vocab:1053, vocab:1089, vocab:1091, vocab:1107, vocab:1119, vocab:1125, vocab:1128,
+    vocab:113, vocab:1133, vocab:1135, vocab:1137;
   skos:inScheme <http://purl.org/pact_funders>;
   skos:prefLabel "not applicable"@en .
 
 vocab:1006 a skos:Concept;
   skos:broader vocab:1000, vocab:1007, vocab:1015, vocab:1019, vocab:1032, vocab:1045,
-    vocab:1053, vocab:1073, vocab:1084, vocab:1094, vocab:1107, vocab:1131;
+    vocab:1053, vocab:1072, vocab:1077, vocab:1107, vocab:1119, vocab:1125, vocab:1128,
+    vocab:113, vocab:1133, vocab:1135, vocab:1137;
   skos:inScheme <http://purl.org/pact_funders>;
   skos:prefLabel "not known"@en .
 
@@ -284,7 +286,7 @@ vocab:1045 a skos:Concept;
   skos:inScheme <http://purl.org/pact_funders>;
   skos:narrower vocab:1004, vocab:1005, vocab:1006, vocab:1046, vocab:1047, vocab:1048,
     vocab:1049, vocab:1050, vocab:1051, vocab:1052;
-  skos:prefLabel "studys ubject"@en;
+  skos:prefLabel "study subject"@en;
   skos:topConceptOf <http://purl.org/pact_funders> .
 
 vocab:1046 a skos:Concept;
@@ -315,10 +317,11 @@ vocab:1050 a skos:Concept;
 vocab:1051 a skos:Concept;
   skos:broader vocab:1045;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "organism forms"@en .
+  skos:prefLabel "organism other"@en .
 
 vocab:1052 a skos:Concept;
-  skos:broader vocab:1045, vocab:1053, vocab:1084, vocab:1119, vocab:1131;
+  skos:broader vocab:1045, vocab:1053, vocab:1072, vocab:1106, vocab:1119, vocab:1125,
+    vocab:1128, vocab:113, vocab:1133, vocab:1135, vocab:1137;
   skos:inScheme <http://purl.org/pact_funders>;
   skos:prefLabel "other"@en .
 
@@ -327,7 +330,7 @@ vocab:1053 a skos:Concept;
   skos:narrower vocab:1005, vocab:1006, vocab:1052, vocab:1054, vocab:1055, vocab:1056,
     vocab:1057, vocab:1058, vocab:1059, vocab:1060, vocab:1061, vocab:1062, vocab:1063,
     vocab:1064, vocab:1065, vocab:1066, vocab:1067, vocab:1068, vocab:1069, vocab:1070,
-    vocab:1071, vocab:1072;
+    vocab:1071;
   skos:prefLabel "study type"@en;
   skos:topConceptOf <http://purl.org/pact_funders> .
 
@@ -339,459 +342,466 @@ vocab:1054 a skos:Concept;
 vocab:1055 a skos:Concept;
   skos:broader vocab:1053;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "clinical conference"@en .
+  skos:prefLabel "clinical study"@en .
 
 vocab:1056 a skos:Concept;
   skos:broader vocab:1053;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "clinical study"@en .
+  skos:prefLabel "clinical trial"@en .
 
 vocab:1057 a skos:Concept;
   skos:broader vocab:1053;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "clinical trial"@en .
+  skos:prefLabel "comparative study"@en .
 
 vocab:1058 a skos:Concept;
   skos:broader vocab:1053;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "comparative study"@en .
+  skos:prefLabel "consensus development conference"@en .
 
 vocab:1059 a skos:Concept;
   skos:broader vocab:1053;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "consensus development conference"@en .
+  skos:prefLabel "evaluation study"@en .
 
 vocab:1060 a skos:Concept;
   skos:broader vocab:1053;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "evaluation study"@en .
+  skos:prefLabel "meta-analysis"@en .
 
 vocab:1061 a skos:Concept;
   skos:broader vocab:1053;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "meta-analysis"@en .
+  skos:prefLabel "multicenter study"@en .
 
 vocab:1062 a skos:Concept;
   skos:broader vocab:1053;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "multicenter study"@en .
+  skos:prefLabel "scientific integrity review"@en .
 
 vocab:1063 a skos:Concept;
   skos:broader vocab:1053;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "scientific integrity review"@en .
+  skos:prefLabel "systematic review"@en .
 
 vocab:1064 a skos:Concept;
   skos:broader vocab:1053;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "systematic review"@en .
+  skos:prefLabel "validation study"@en .
 
 vocab:1065 a skos:Concept;
   skos:broader vocab:1053;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "validation study"@en .
+  skos:prefLabel "observational study"@en .
 
 vocab:1066 a skos:Concept;
   skos:broader vocab:1053;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "observational study"@en .
+  skos:prefLabel "biological specimen banks"@en .
 
 vocab:1067 a skos:Concept;
   skos:broader vocab:1053;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "biological specimen banks"@en .
+  skos:prefLabel "policy report"@en .
 
 vocab:1068 a skos:Concept;
   skos:broader vocab:1053;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "policy report"@en .
+  skos:prefLabel "study, design unspecified"@en .
 
 vocab:1069 a skos:Concept;
   skos:broader vocab:1053;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "study, design unspecified"@en .
+  skos:prefLabel "review"@en .
 
 vocab:1070 a skos:Concept;
   skos:broader vocab:1053;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "review"@en .
+  skos:prefLabel "laboratory work"@en .
 
 vocab:1071 a skos:Concept;
   skos:broader vocab:1053;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "laboratory work"@en .
-
-vocab:1072 a skos:Concept;
-  skos:broader vocab:1053;
-  skos:inScheme <http://purl.org/pact_funders>;
   skos:prefLabel "secondary data analysis"@en .
 
-vocab:1073 a skos:Concept;
+vocab:1072 a skos:Concept;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:narrower vocab:1004, vocab:1005, vocab:1006, vocab:1074, vocab:1075, vocab:1076,
-    vocab:1077, vocab:1078, vocab:1079, vocab:1080, vocab:1081, vocab:1082, vocab:1083;
-  skos:prefLabel "clinical trial phase"@en;
-  skos:topConceptOf <http://purl.org/pact_funders> .
-
-vocab:1074 a skos:Concept;
-  skos:broader vocab:1073;
-  skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "adaptive clinical trial"@en .
-
-vocab:1075 a skos:Concept;
-  skos:broader vocab:1073;
-  skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "clinical trial, phase i"@en .
-
-vocab:1076 a skos:Concept;
-  skos:broader vocab:1073;
-  skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "clinical trial, phase ii"@en .
-
-vocab:1077 a skos:Concept;
-  skos:broader vocab:1073;
-  skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "clinical trial, phase iii"@en .
-
-vocab:1078 a skos:Concept;
-  skos:broader vocab:1073;
-  skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "clinical trial, phase iv"@en .
-
-vocab:1079 a skos:Concept;
-  skos:broader vocab:1073;
-  skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "controlled clinical trial"@en .
-
-vocab:1080 a skos:Concept;
-  skos:broader vocab:1073;
-  skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "randomized controlled trial"@en .
-
-vocab:1081 a skos:Concept;
-  skos:broader vocab:1073;
-  skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "clinical trial protocol"@en .
-
-vocab:1082 a skos:Concept;
-  skos:broader vocab:1073;
-  skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "clinical trial, veterinary"@en .
-
-vocab:1083 a skos:Concept;
-  skos:broader vocab:1073;
-  skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "randomized controlled trial, veterinary"@en .
-
-vocab:1084 a skos:Concept;
-  skos:inScheme <http://purl.org/pact_funders>;
-  skos:narrower vocab:1004, vocab:1006, vocab:1052, vocab:1085, vocab:1086, vocab:1087,
-    vocab:1088;
+  skos:narrower vocab:1004, vocab:1006, vocab:1052, vocab:1073, vocab:1074, vocab:1075,
+    vocab:1076;
   skos:prefLabel "ethnicity"@en;
   skos:topConceptOf <http://purl.org/pact_funders> .
 
-vocab:1085 a skos:Concept;
-  skos:broader vocab:1084;
+vocab:1073 a skos:Concept;
+  skos:broader vocab:1072;
   skos:inScheme <http://purl.org/pact_funders>;
   skos:prefLabel "asian"@en .
 
-vocab:1086 a skos:Concept;
-  skos:broader vocab:1084;
+vocab:1074 a skos:Concept;
+  skos:broader vocab:1072;
   skos:inScheme <http://purl.org/pact_funders>;
   skos:prefLabel "black"@en .
 
-vocab:1087 a skos:Concept;
-  skos:broader vocab:1084;
+vocab:1075 a skos:Concept;
+  skos:broader vocab:1072;
   skos:inScheme <http://purl.org/pact_funders>;
   skos:prefLabel "white"@en .
 
-vocab:1088 a skos:Concept;
-  skos:broader vocab:1084;
+vocab:1076 a skos:Concept;
+  skos:broader vocab:1072;
   skos:inScheme <http://purl.org/pact_funders>;
   skos:prefLabel "mixed"@en .
 
+vocab:1077 a skos:Concept;
+  skos:inScheme <http://purl.org/pact_funders>;
+  skos:narrower vocab:1004, vocab:1006, vocab:1078, vocab:1079, vocab:1080, vocab:1081,
+    vocab:1082;
+  skos:prefLabel "project information"@en;
+  skos:topConceptOf <http://purl.org/pact_funders> .
+
+vocab:1078 a skos:Concept;
+  skos:broader vocab:1077;
+  skos:inScheme <http://purl.org/pact_funders>;
+  skos:prefLabel "funding organisation name"@en .
+
+vocab:1079 a skos:Concept;
+  skos:broader vocab:1077;
+  skos:inScheme <http://purl.org/pact_funders>;
+  skos:prefLabel "funder CrossRefID"@en .
+
+vocab:1080 a skos:Concept;
+  skos:broader vocab:1077;
+  skos:inScheme <http://purl.org/pact_funders>;
+  skos:prefLabel "funder acronym"@en .
+
+vocab:1081 a skos:Concept;
+  skos:broader vocab:1077, vocab:1089, vocab:1091, vocab:1093;
+  skos:inScheme <http://purl.org/pact_funders>;
+  skos:prefLabel "country"@en .
+
+vocab:1082 a skos:Concept;
+  skos:broader vocab:1077;
+  skos:inScheme <http://purl.org/pact_funders>;
+  skos:narrower vocab:1083, vocab:1084, vocab:1085, vocab:1086, vocab:1087, vocab:1088;
+  skos:prefLabel "regions"@en .
+
+vocab:1083 a skos:Concept;
+  skos:broader vocab:1082;
+  skos:inScheme <http://purl.org/pact_funders>;
+  skos:prefLabel "Africa"@en .
+
+vocab:1084 a skos:Concept;
+  skos:broader vocab:1082;
+  skos:inScheme <http://purl.org/pact_funders>;
+  skos:prefLabel "Americas"@en .
+
+vocab:1085 a skos:Concept;
+  skos:broader vocab:1082;
+  skos:inScheme <http://purl.org/pact_funders>;
+  skos:prefLabel "South-East Asia"@en .
+
+vocab:1086 a skos:Concept;
+  skos:broader vocab:1082;
+  skos:inScheme <http://purl.org/pact_funders>;
+  skos:prefLabel "Europe"@en .
+
+vocab:1087 a skos:Concept;
+  skos:broader vocab:1082;
+  skos:inScheme <http://purl.org/pact_funders>;
+  skos:prefLabel "Eastern Mediterranean"@en .
+
+vocab:1088 a skos:Concept;
+  skos:broader vocab:1082;
+  skos:inScheme <http://purl.org/pact_funders>;
+  skos:prefLabel "Western Pacific"@en .
+
 vocab:1089 a skos:Concept;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:narrower vocab:1090, vocab:1091, vocab:1092, vocab:1093, vocab:1094;
-  skos:prefLabel "project information"@en;
+  skos:narrower vocab:1004, vocab:1005, vocab:1081, vocab:1090;
+  skos:prefLabel "partner organisation"@en;
   skos:topConceptOf <http://purl.org/pact_funders> .
 
 vocab:1090 a skos:Concept;
   skos:broader vocab:1089;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "funding organization name"@en .
+  skos:prefLabel "partner organisation name"@en .
 
 vocab:1091 a skos:Concept;
-  skos:broader vocab:1089;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "funder CrossRefID"@en .
+  skos:narrower vocab:1004, vocab:1005, vocab:1081, vocab:1092;
+  skos:prefLabel "research institution"@en;
+  skos:topConceptOf <http://purl.org/pact_funders> .
 
 vocab:1092 a skos:Concept;
-  skos:broader vocab:1089;
+  skos:broader vocab:1091;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "funder acronym"@en .
+  skos:prefLabel "research institution name"@en .
 
 vocab:1093 a skos:Concept;
-  skos:broader vocab:1089;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "Country"@en .
+  skos:narrower vocab:1081;
+  skos:prefLabel "research site"@en;
+  skos:topConceptOf <http://purl.org/pact_funders> .
 
 vocab:1094 a skos:Concept;
-  skos:broader vocab:1089;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:narrower vocab:1004, vocab:1006, vocab:1095, vocab:1096, vocab:1097, vocab:1098,
-    vocab:1099, vocab:1100;
-  skos:prefLabel "regions"@en .
+  skos:narrower vocab:1004, vocab:1095, vocab:1096, vocab:1097, vocab:1098, vocab:1099,
+    vocab:1100, vocab:1101, vocab:1102, vocab:1103, vocab:1104, vocab:1105;
+  skos:prefLabel "WHO GH Observatory Framework"@en;
+  skos:topConceptOf <http://purl.org/pact_funders> .
 
 vocab:1095 a skos:Concept;
   skos:broader vocab:1094;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "africa"@en .
+  skos:prefLabel "cause"@en .
 
 vocab:1096 a skos:Concept;
   skos:broader vocab:1094;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "americas"@en .
+  skos:prefLabel "solution"@en .
 
 vocab:1097 a skos:Concept;
   skos:broader vocab:1094;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "south-east asia"@en .
+  skos:prefLabel "drug development"@en .
 
 vocab:1098 a skos:Concept;
   skos:broader vocab:1094;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "europe"@en .
+  skos:prefLabel "diagnostics/screening"@en .
 
 vocab:1099 a skos:Concept;
   skos:broader vocab:1094;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "eastern mediterranean"@en .
+  skos:prefLabel "device"@en .
 
 vocab:1100 a skos:Concept;
   skos:broader vocab:1094;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "western pacific"@en .
-
-vocab:1101 a skos:Concept;
-  skos:inScheme <http://purl.org/pact_funders>;
-  skos:narrower vocab:1004, vocab:1005, vocab:1102, vocab:1103;
-  skos:prefLabel "partner organization"@en;
-  skos:topConceptOf <http://purl.org/pact_funders> .
-
-vocab:1102 a skos:Concept;
-  skos:broader vocab:1101;
-  skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "partner organization name"@en .
-
-vocab:1103 a skos:Concept;
-  skos:broader vocab:1101;
-  skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "partner organization country"@en .
-
-vocab:1104 a skos:Concept;
-  skos:inScheme <http://purl.org/pact_funders>;
-  skos:narrower vocab:1004, vocab:1005, vocab:1105, vocab:1106;
-  skos:prefLabel "research institution"@en;
-  skos:topConceptOf <http://purl.org/pact_funders> .
-
-vocab:1105 a skos:Concept;
-  skos:broader vocab:1104;
-  skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "research institution name"@en .
-
-vocab:1106 a skos:Concept;
-  skos:broader vocab:1104;
-  skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "research institution country"@en .
-
-vocab:1107 a skos:Concept;
-  skos:inScheme <http://purl.org/pact_funders>;
-  skos:narrower vocab:1004, vocab:1005, vocab:1006, vocab:1108, vocab:1109, vocab:1110,
-    vocab:1111, vocab:1112, vocab:1113, vocab:1114, vocab:1115, vocab:1116, vocab:1117,
-    vocab:1118;
-  skos:prefLabel "WHO GHO bservatory Framework"@en;
-  skos:topConceptOf <http://purl.org/pact_funders> .
-
-vocab:1108 a skos:Concept;
-  skos:broader vocab:1107;
-  skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "cause"@en .
-
-vocab:1109 a skos:Concept;
-  skos:broader vocab:1107;
-  skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "solution"@en .
-
-vocab:1110 a skos:Concept;
-  skos:broader vocab:1107;
-  skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "drug development"@en .
-
-vocab:1111 a skos:Concept;
-  skos:broader vocab:1107;
-  skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "diagnostics/screening"@en .
-
-vocab:1112 a skos:Concept;
-  skos:broader vocab:1107;
-  skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "device"@en .
-
-vocab:1113 a skos:Concept;
-  skos:broader vocab:1107;
-  skos:inScheme <http://purl.org/pact_funders>;
   skos:prefLabel "vaccine"@en .
 
-vocab:1114 a skos:Concept;
-  skos:broader vocab:1107;
+vocab:1101 a skos:Concept;
+  skos:broader vocab:1094;
   skos:inScheme <http://purl.org/pact_funders>;
   skos:prefLabel "vector control"@en .
 
-vocab:1115 a skos:Concept;
-  skos:broader vocab:1107;
+vocab:1102 a skos:Concept;
+  skos:broader vocab:1094;
   skos:inScheme <http://purl.org/pact_funders>;
   skos:prefLabel "basic Science"@en .
 
-vocab:1116 a skos:Concept;
-  skos:broader vocab:1107;
+vocab:1103 a skos:Concept;
+  skos:broader vocab:1094;
   skos:inScheme <http://purl.org/pact_funders>;
   skos:prefLabel "implementation"@en .
 
-vocab:1117 a skos:Concept;
-  skos:broader vocab:1107;
+vocab:1104 a skos:Concept;
+  skos:broader vocab:1094;
   skos:inScheme <http://purl.org/pact_funders>;
   skos:prefLabel "evaluation"@en .
 
-vocab:1118 a skos:Concept;
-  skos:broader vocab:1107;
+vocab:1105 a skos:Concept;
+  skos:broader vocab:1094;
   skos:inScheme <http://purl.org/pact_funders>;
   skos:prefLabel "no research category assigned"@en .
 
-vocab:1119 a skos:Concept;
+vocab:1106 a skos:Concept;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:narrower vocab:1052, vocab:1120, vocab:1121, vocab:1122, vocab:1123, vocab:1124,
-    vocab:1125, vocab:1126, vocab:1127, vocab:1128, vocab:1129, vocab:1130;
+  skos:narrower vocab:1052, vocab:1107, vocab:1108, vocab:1109, vocab:1110, vocab:1111,
+    vocab:1112, vocab:1113, vocab:1114, vocab:1115, vocab:1116, vocab:1117;
   skos:prefLabel "disease"@en;
   skos:topConceptOf <http://purl.org/pact_funders> .
 
-vocab:1120 a skos:Concept;
+vocab:1107 a skos:Concept;
   dct:source <http://purl.org/zonmw/covid19/10270>;
+  skos:broader vocab:1106;
+  skos:inScheme <http://purl.org/pact_funders>;
+  skos:narrower vocab:1005, vocab:1006;
+  skos:prefLabel "COVID-19"@en .
+
+vocab:1108 a skos:Concept;
+  skos:broader vocab:1106;
+  skos:inScheme <http://purl.org/pact_funders>;
+  skos:prefLabel "Crimean-Congo haemorrhagic fever"@en .
+
+vocab:1109 a skos:Concept;
+  skos:broader vocab:1106;
+  skos:inScheme <http://purl.org/pact_funders>;
+  skos:prefLabel "Ebola virus disease"@en .
+
+vocab:1110 a skos:Concept;
+  skos:broader vocab:1106;
+  skos:inScheme <http://purl.org/pact_funders>;
+  skos:prefLabel "Marburg virus disease"@en .
+
+vocab:1111 a skos:Concept;
+  skos:broader vocab:1106;
+  skos:inScheme <http://purl.org/pact_funders>;
+  skos:prefLabel "Lassa fever"@en .
+
+vocab:1112 a skos:Concept;
+  skos:broader vocab:1106;
+  skos:inScheme <http://purl.org/pact_funders>;
+  skos:prefLabel "Middle East Respiratory Syndrome Coronavirus (MERS-CoV)"@en .
+
+vocab:1113 a skos:Concept;
+  skos:broader vocab:1106;
+  skos:inScheme <http://purl.org/pact_funders>;
+  skos:prefLabel "Severe Acute Respiratory Syndrome (SARS)"@en .
+
+vocab:1114 a skos:Concept;
+  skos:broader vocab:1106;
+  skos:inScheme <http://purl.org/pact_funders>;
+  skos:prefLabel "Nipah and henipaviral disease"@en .
+
+vocab:1115 a skos:Concept;
+  skos:broader vocab:1106;
+  skos:inScheme <http://purl.org/pact_funders>;
+  skos:prefLabel "Rift Valley Fever"@en .
+
+vocab:1116 a skos:Concept;
+  skos:broader vocab:1106;
+  skos:inScheme <http://purl.org/pact_funders>;
+  skos:prefLabel "Zika"@en .
+
+vocab:1117 a skos:Concept;
+  skos:broader vocab:1106;
+  skos:inScheme <http://purl.org/pact_funders>;
+  skos:prefLabel "Congenital Zika virus disease"@en .
+
+vocab:1118 a skos:Concept;
+  skos:inScheme <http://purl.org/pact_funders>;
+  skos:narrower vocab:1119, vocab:1125, vocab:1128, vocab:1131, vocab:1133, vocab:1135,
+    vocab:1137;
+  skos:prefLabel "pathogens"@en;
+  skos:topConceptOf <http://purl.org/pact_funders> .
+
+vocab:1119 a skos:Concept;
+  skos:broader vocab:1118;
+  skos:inScheme <http://purl.org/pact_funders>;
+  skos:narrower vocab:1005, vocab:1006, vocab:1052, vocab:1120, vocab:1121, vocab:1122,
+    vocab:1123, vocab:1124;
+  skos:prefLabel "Coronavirus"@en .
+
+vocab:1120 a skos:Concept;
   skos:broader vocab:1119;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "COVID-19"@en .
+  skos:prefLabel "SARS-CoV"@en .
 
 vocab:1121 a skos:Concept;
   skos:broader vocab:1119;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "Crimean-Congo haemorrhagic fever"@en .
+  skos:prefLabel "SARSr-CoV"@en .
 
 vocab:1122 a skos:Concept;
+  dct:source <http://purl.org/zonmw/covid19/10269>;
   skos:broader vocab:1119;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "Ebola virus disease"@en .
+  skos:prefLabel "SARS-CoV-2"@en .
 
 vocab:1123 a skos:Concept;
   skos:broader vocab:1119;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "Marburg virus disease"@en .
+  skos:prefLabel "SARS-CoV-1"@en .
 
 vocab:1124 a skos:Concept;
   skos:broader vocab:1119;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "Lassa fever"@en .
+  skos:prefLabel "MERS-CoV"@en .
 
 vocab:1125 a skos:Concept;
-  skos:broader vocab:1119;
+  skos:broader vocab:1118;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "Middle East Respiratory Syndrome Coronavirus (MERS-CoV)"@en .
+  skos:narrower vocab:1005, vocab:1006, vocab:1052, vocab:1126, vocab:1127;
+  skos:prefLabel "Bunyaviridae"@en .
 
 vocab:1126 a skos:Concept;
-  skos:broader vocab:1119;
+  skos:broader vocab:1125;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "Severe Acute Respiratory Syndrome (SARS)"@en .
+  skos:prefLabel "Crimean-Congo haemorrhagic fever virus"@en .
 
 vocab:1127 a skos:Concept;
-  skos:broader vocab:1119;
+  skos:broader vocab:1125;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "Nipah and henipaviral disease"@en .
+  skos:prefLabel "Rift Valley Fever virus"@en .
 
 vocab:1128 a skos:Concept;
-  skos:broader vocab:1119;
+  skos:broader vocab:1118;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "Rift Valley Fever"@en .
+  skos:narrower vocab:1005, vocab:1006, vocab:1052, vocab:1129, vocab:1130;
+  skos:prefLabel "Filoviridae"@en .
 
 vocab:1129 a skos:Concept;
-  skos:broader vocab:1119;
+  skos:broader vocab:1128;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "Zika"@en .
+  skos:prefLabel "Ebola Virus"@en .
 
 vocab:1130 a skos:Concept;
-  skos:broader vocab:1119;
+  skos:broader vocab:1128;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "Congenital Zika virus disease"@en .
+  skos:prefLabel "Marburg virus"@en .
 
 vocab:1131 a skos:Concept;
+  skos:broader vocab:1118;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:narrower vocab:1005, vocab:1006, vocab:1052, vocab:1132, vocab:1133, vocab:1134,
-    vocab:1135, vocab:1136, vocab:1137;
-  skos:prefLabel "pathogens"@en;
-  skos:topConceptOf <http://purl.org/pact_funders> .
+  skos:narrower vocab:1132;
+  skos:prefLabel "Arenaviridae"@en .
 
 vocab:1132 a skos:Concept;
   skos:broader vocab:1131;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "Coronavirus"@en .
+  skos:prefLabel "Lassa fever virus"@en .
 
 vocab:1133 a skos:Concept;
-  skos:broader vocab:1131;
+  skos:broader vocab:1118;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "SARS-CoV"@en .
+  skos:narrower vocab:1005, vocab:1006, vocab:1052, vocab:1134;
+  skos:prefLabel "Henipavirus"@en .
 
 vocab:1134 a skos:Concept;
-  skos:broader vocab:1131;
+  skos:broader vocab:1133;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "SARSr-CoV"@en .
+  skos:prefLabel "Nipah virus"@en .
 
 vocab:1135 a skos:Concept;
-  dct:source <http://purl.org/zonmw/covid19/10269>;
-  skos:broader vocab:1131;
+  skos:broader vocab:1118;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "SARS-CoV-2"@en .
+  skos:narrower vocab:1005, vocab:1006, vocab:1052, vocab:1136;
+  skos:prefLabel "Flaviviridae"@en .
 
 vocab:1136 a skos:Concept;
-  skos:broader vocab:1131;
+  skos:broader vocab:1135;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "SARS-CoV-1"@en .
+  skos:prefLabel "Zika virus"@en .
 
 vocab:1137 a skos:Concept;
-  skos:broader vocab:1131;
+  skos:broader vocab:1118;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "MERS-CoV"@en .
+  skos:narrower vocab:1005, vocab:1006, vocab:1052, vocab:1138;
+  skos:prefLabel "Influenza A"@en .
 
 vocab:1138 a skos:Concept;
+  skos:broader vocab:1137;
   skos:inScheme <http://purl.org/pact_funders>;
-  skos:narrower vocab:1139, vocab:1140, vocab:1141, vocab:1142;
+  skos:prefLabel "Pandemic influenza A (H1N1)"@en .
+
+vocab:1139 a skos:Concept;
+  skos:inScheme <http://purl.org/pact_funders>;
+  skos:narrower vocab:1140, vocab:1141, vocab:1142;
   skos:prefLabel "investigator"@en;
   skos:topConceptOf <http://purl.org/pact_funders> .
 
-vocab:1139 a skos:Concept;
-  skos:broader vocab:1138;
-  skos:inScheme <http://purl.org/pact_funders>;
-  skos:prefLabel "investigator identification"@en .
-
 vocab:1140 a skos:Concept;
-  skos:broader vocab:1138;
+  skos:broader vocab:1139;
   skos:inScheme <http://purl.org/pact_funders>;
   skos:prefLabel "investigator ORCID"@en .
 
 vocab:1141 a skos:Concept;
-  skos:broader vocab:1138;
+  skos:broader vocab:1139;
   skos:inScheme <http://purl.org/pact_funders>;
   skos:prefLabel "investigator first name"@en .
 
 vocab:1142 a skos:Concept;
-  skos:broader vocab:1138;
+  skos:broader vocab:1139;
   skos:inScheme <http://purl.org/pact_funders>;
   skos:prefLabel "investigator last name"@en .
 
@@ -986,3 +996,5 @@ vocab:1205 a owl:ObjectProperty;
 
 vocab:1206 a owl:ObjectProperty;
   skos:prefLabel "has special tag"@en .
+
+vocab:113 skos:narrower vocab:1005, vocab:1006, vocab:1052 .

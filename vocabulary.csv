@@ -20,15 +20,15 @@ dct:creator,,An ORCID ID of the vocabulary creator
 dct:rights,https://spdx.org/licenses/CC0-1.0,License under which the vocabulary is provided
 dct:hasVersion^^xsd:string,0.1.0,Vocabulary version
 dct:created^^xsd:datetime,2022-06-01T00:00:00+00:00,Date when vocabulary was initially created
-dct:modified^^xsd:datetime,2023-08-29T15:51:02+00:00,Automatic update when vocabulary is updated
+dct:modified^^xsd:datetime,2023-08-30T15:11:55+00:00,Automatic update when vocabulary is updated
 Identifier,"skos:prefLabel@en(id=""label"")","skos:altLabel(separator="","")",rdf:type,"skos:broader(separator="","")",skos:definition@en,"dct:source(separator="","")","skos:exactMatch(separator="","")","skos:closeMatch(separator="","")","skos:broadMatch(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")","puv:statistic(separator="","")","puv:usesMethod(separator="","")","sosa:madeBySensor(separator="","")","puv:uom(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,dct:modified^^xsd:date,dct:created^^xsd:date,"dct:creator(separator="","")","dct:contributor(separator="","")"
 vocab:1000,grant type
-vocab:1001,new,,,vocab:1000
-vocab:1002,repurposed,,,vocab:1000
-vocab:1003,supplemented,,,vocab:1000
-vocab:1004,unspecified,,,"vocab:1000,vocab:1007,vocab:1015,vocab:1019,vocab:1032,vocab:1045,vocab:1073,vocab:1084,vocab:1094,vocab:1101,vocab:1104,vocab:1107"
-vocab:1005,not applicable,,,"vocab:1000,vocab:1007,vocab:1015,vocab:1019,vocab:1032,vocab:1045,vocab:1053,vocab:1073,vocab:1101,vocab:1104,vocab:1107,vocab:1131"
-vocab:1006,not known,,,"vocab:1000,vocab:1007,vocab:1015,vocab:1019,vocab:1032,vocab:1045,vocab:1053,vocab:1073,vocab:1084,vocab:1094,vocab:1107,vocab:1131"
+vocab:1001,new grant,,,vocab:1000
+vocab:1002,repurposed grant,,,vocab:1000
+vocab:1003,supplemented grant,,,vocab:1000
+vocab:1004,unspecified,,,"vocab:1000,vocab:1007,vocab:1015,vocab:1019,vocab:1032,vocab:1045,vocab:1072,vocab:1077,vocab:1089,vocab:1091,vocab:1094"
+vocab:1005,not applicable,,,"vocab:1000,vocab:1007,vocab:1015,vocab:1019,vocab:1032,vocab:1045,vocab:1053,vocab:1089,vocab:1091,vocab:1107,vocab:1119,vocab:1125,vocab:1128,vocab:113,vocab:1133,vocab:1135,vocab:1137"
+vocab:1006,not known,,,"vocab:1000,vocab:1007,vocab:1015,vocab:1019,vocab:1032,vocab:1045,vocab:1053,vocab:1072,vocab:1077,vocab:1107,vocab:1119,vocab:1125,vocab:1128,vocab:113,vocab:1133,vocab:1135,vocab:1137"
 vocab:1007,age group
 vocab:1008,adolescent,,,vocab:1007,,http://purl.org/zonmw/covid19/10038
 vocab:1009,adult,,,vocab:1007,,http://purl.org/zonmw/covid19/10038
@@ -67,104 +67,104 @@ vocab:1041,physicians,,,vocab:1032
 vocab:1042,dentists and dental staff,,,vocab:1032
 vocab:1043,veterinarians,,,vocab:1032
 vocab:1044,volunteers,,,vocab:1032
-vocab:1045,studys ubject
+vocab:1045,study subject
 vocab:1046,humans,,,vocab:1045
 vocab:1047,animals,,,vocab:1045
 vocab:1048,invertebrates,,,vocab:1045
 vocab:1049,bacteria,,,vocab:1045
 vocab:1050,viruses,,,vocab:1045
-vocab:1051,organism forms,,,vocab:1045
-vocab:1052,other,,,"vocab:1045,vocab:1053,vocab:1084,vocab:1119,vocab:1131"
+vocab:1051,organism other,,,vocab:1045
+vocab:1052,other,,,"vocab:1045,vocab:1053,vocab:1072,vocab:1106,vocab:1119,vocab:1125,vocab:1128,vocab:113,vocab:1133,vocab:1135,vocab:1137"
 vocab:1053,study type
 vocab:1054,case reports,,,vocab:1053
-vocab:1055,clinical conference,,,vocab:1053
-vocab:1056,clinical study,,,vocab:1053
-vocab:1057,clinical trial,,,vocab:1053
-vocab:1058,comparative study,,,vocab:1053
-vocab:1059,consensus development conference,,,vocab:1053
-vocab:1060,evaluation study,,,vocab:1053
-vocab:1061,meta-analysis,,,vocab:1053
-vocab:1062,multicenter study,,,vocab:1053
-vocab:1063,scientific integrity review,,,vocab:1053
-vocab:1064,systematic review,,,vocab:1053
-vocab:1065,validation study,,,vocab:1053
-vocab:1066,observational study,,,vocab:1053
-vocab:1067,biological specimen banks,,,vocab:1053
-vocab:1068,policy report,,,vocab:1053
-vocab:1069,"study, design unspecified",,,vocab:1053
-vocab:1070,review,,,vocab:1053
-vocab:1071,laboratory work,,,vocab:1053
-vocab:1072,secondary data analysis,,,vocab:1053
-vocab:1073,clinical trial phase
-vocab:1074,adaptive clinical trial,,,vocab:1073
-vocab:1075,"clinical trial, phase i",,,vocab:1073
-vocab:1076,"clinical trial, phase ii",,,vocab:1073
-vocab:1077,"clinical trial, phase iii",,,vocab:1073
-vocab:1078,"clinical trial, phase iv",,,vocab:1073
-vocab:1079,controlled clinical trial,,,vocab:1073
-vocab:1080,randomized controlled trial,,,vocab:1073
-vocab:1081,clinical trial protocol,,,vocab:1073
-vocab:1082,"clinical trial, veterinary",,,vocab:1073
-vocab:1083,"randomized controlled trial, veterinary",,,vocab:1073
-vocab:1084,ethnicity
-vocab:1085,asian,,,vocab:1084
-vocab:1086,black,,,vocab:1084
-vocab:1087,white,,,vocab:1084
-vocab:1088,mixed,,,vocab:1084
-vocab:1089,project information
-vocab:1090,funding organization name,,,vocab:1089
-vocab:1091,funder CrossRefID,,,vocab:1089
-vocab:1092,funder acronym,,,vocab:1089
-vocab:1093,Country,,,vocab:1089
-vocab:1094,regions,,,vocab:1089
-vocab:1095,africa,,,vocab:1094
-vocab:1096,americas,,,vocab:1094
-vocab:1097,south-east asia,,,vocab:1094
-vocab:1098,europe,,,vocab:1094
-vocab:1099,eastern mediterranean,,,vocab:1094
-vocab:1100,western pacific,,,vocab:1094
-vocab:1101,partner organization
-vocab:1102,partner organization name,,,vocab:1101
-vocab:1103,partner organization country,,,vocab:1101
-vocab:1104,research institution
-vocab:1105,research institution name,,,vocab:1104
-vocab:1106,research institution country,,,vocab:1104
-vocab:1107,WHO GHO bservatory Framework
-vocab:1108,cause,,,vocab:1107
-vocab:1109,solution,,,vocab:1107
-vocab:1110,drug development,,,vocab:1107
-vocab:1111,diagnostics/screening,,,vocab:1107
-vocab:1112,device,,,vocab:1107
-vocab:1113,vaccine,,,vocab:1107
-vocab:1114,vector control,,,vocab:1107
-vocab:1115,basic Science,,,vocab:1107
-vocab:1116,implementation,,,vocab:1107
-vocab:1117,evaluation,,,vocab:1107
-vocab:1118,no research category assigned,,,vocab:1107
-vocab:1119,disease
-vocab:1120,COVID-19,,,vocab:1119,,http://purl.org/zonmw/covid19/10270
-vocab:1121,Crimean-Congo haemorrhagic fever,,,vocab:1119
-vocab:1122,Ebola virus disease,,,vocab:1119
-vocab:1123,Marburg virus disease,,,vocab:1119
-vocab:1124,Lassa fever,,,vocab:1119
-vocab:1125,Middle East Respiratory Syndrome Coronavirus (MERS-CoV),,,vocab:1119
-vocab:1126,Severe Acute Respiratory Syndrome (SARS),,,vocab:1119
-vocab:1127,Nipah and henipaviral disease,,,vocab:1119
-vocab:1128,Rift Valley Fever,,,vocab:1119
-vocab:1129,Zika,,,vocab:1119
-vocab:1130,Congenital Zika virus disease,,,vocab:1119
-vocab:1131,pathogens
-vocab:1132,Coronavirus,,,vocab:1131
-vocab:1133,SARS-CoV,,,vocab:1131
-vocab:1134,SARSr-CoV,,,vocab:1131
-vocab:1135,SARS-CoV-2,,,vocab:1131,,http://purl.org/zonmw/covid19/10269
-vocab:1136,SARS-CoV-1,,,vocab:1131
-vocab:1137,MERS-CoV,,,vocab:1131
-vocab:1138,investigator
-vocab:1139,investigator identification,,,vocab:1138
-vocab:1140,investigator ORCID,,,vocab:1138
-vocab:1141,investigator first name,,,vocab:1138
-vocab:1142,investigator last name,,skos:Concept,vocab:1138
+vocab:1055,clinical study,,,vocab:1053
+vocab:1056,clinical trial,,,vocab:1053
+vocab:1057,comparative study,,,vocab:1053
+vocab:1058,consensus development conference,,,vocab:1053
+vocab:1059,evaluation study,,,vocab:1053
+vocab:1060,meta-analysis,,,vocab:1053
+vocab:1061,multicenter study,,,vocab:1053
+vocab:1062,scientific integrity review,,,vocab:1053
+vocab:1063,systematic review,,,vocab:1053
+vocab:1064,validation study,,,vocab:1053
+vocab:1065,observational study,,,vocab:1053
+vocab:1066,biological specimen banks,,,vocab:1053
+vocab:1067,policy report,,,vocab:1053
+vocab:1068,"study, design unspecified",,,vocab:1053
+vocab:1069,review,,,vocab:1053
+vocab:1070,laboratory work,,,vocab:1053
+vocab:1071,secondary data analysis,,,vocab:1053
+vocab:1072,ethnicity
+vocab:1073,asian,,,vocab:1072
+vocab:1074,black,,,vocab:1072
+vocab:1075,white,,,vocab:1072
+vocab:1076,mixed,,,vocab:1072
+vocab:1077,project information
+vocab:1078,funding organisation name,,,vocab:1077
+vocab:1079,funder CrossRefID,,,vocab:1077
+vocab:1080,funder acronym,,,vocab:1077
+vocab:1081,country,,,"vocab:1077,vocab:1089,vocab:1091,vocab:1093"
+vocab:1082,regions,,,vocab:1077
+vocab:1083,Africa,,,vocab:1082
+vocab:1084,Americas,,,vocab:1082
+vocab:1085,South-East Asia,,,vocab:1082
+vocab:1086,Europe,,,vocab:1082
+vocab:1087,Eastern Mediterranean,,,vocab:1082
+vocab:1088,Western Pacific,,,vocab:1082
+vocab:1089,partner organisation
+vocab:1090,partner organisation name,,,vocab:1089
+vocab:1091,research institution
+vocab:1092,research institution name,,,vocab:1091
+vocab:1093,research site
+vocab:1094,WHO GH Observatory Framework
+vocab:1095,cause,,,vocab:1094
+vocab:1096,solution,,,vocab:1094
+vocab:1097,drug development,,,vocab:1094
+vocab:1098,diagnostics/screening,,,vocab:1094
+vocab:1099,device,,,vocab:1094
+vocab:1100,vaccine,,,vocab:1094
+vocab:1101,vector control,,,vocab:1094
+vocab:1102,basic Science,,,vocab:1094
+vocab:1103,implementation,,,vocab:1094
+vocab:1104,evaluation,,,vocab:1094
+vocab:1105,no research category assigned,,,vocab:1094
+vocab:1106,disease
+vocab:1107,COVID-19,,,vocab:1106,,http://purl.org/zonmw/covid19/10270
+vocab:1108,Crimean-Congo haemorrhagic fever,,,vocab:1106
+vocab:1109,Ebola virus disease,,,vocab:1106
+vocab:1110,Marburg virus disease,,,vocab:1106
+vocab:1111,Lassa fever,,,vocab:1106
+vocab:1112,Middle East Respiratory Syndrome Coronavirus (MERS-CoV),,,vocab:1106
+vocab:1113,Severe Acute Respiratory Syndrome (SARS),,,vocab:1106
+vocab:1114,Nipah and henipaviral disease,,,vocab:1106
+vocab:1115,Rift Valley Fever,,,vocab:1106
+vocab:1116,Zika,,,vocab:1106
+vocab:1117,Congenital Zika virus disease,,,vocab:1106
+vocab:1118,pathogens
+vocab:1119,Coronavirus,,,vocab:1118
+vocab:1120,SARS-CoV,,,vocab:1119
+vocab:1121,SARSr-CoV,,,vocab:1119
+vocab:1122,SARS-CoV-2,,,vocab:1119,,http://purl.org/zonmw/covid19/10269
+vocab:1123,SARS-CoV-1,,,vocab:1119
+vocab:1124,MERS-CoV,,,vocab:1119
+vocab:1125,Bunyaviridae,,,vocab:1118
+vocab:1126,Crimean-Congo haemorrhagic fever virus,,,vocab:1125
+vocab:1127,Rift Valley Fever virus,,,vocab:1125
+vocab:1128,Filoviridae,,,vocab:1118
+vocab:1129,Ebola Virus,,,vocab:1128
+vocab:1130,Marburg virus,,,vocab:1128
+vocab:1131,Arenaviridae,,,vocab:1118
+vocab:1132,Lassa fever virus,,,vocab:1131
+vocab:1133,Henipavirus,,,vocab:1118
+vocab:1134,Nipah virus,,,vocab:1133
+vocab:1135,Flaviviridae,,,vocab:1118
+vocab:1136,Zika virus,,,vocab:1135
+vocab:1137,Influenza A,,,vocab:1118
+vocab:1138,Pandemic influenza A (H1N1),,,vocab:1137
+vocab:1139,investigator
+vocab:1140,investigator ORCID,,,vocab:1139
+vocab:1141,investigator first name,,,vocab:1139
+vocab:1142,investigator last name,,skos:Concept,vocab:1139
 vocab:1143,has grant id,,owl:ObjectProperty
 vocab:1144,has unique database reference number ,,owl:ObjectProperty
 vocab:1145,has grant title original,,owl:ObjectProperty
