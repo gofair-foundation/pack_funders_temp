@@ -27,7 +27,7 @@
   dct:created "2022-06-01T00:00:00+00:00"^^xsd:datetime;
   dct:description "Vocabulary description"@en;
   dct:hasVersion "0.1.0";
-  dct:modified "2023-08-30T15:48:08+00:00"^^xsd:datetime;
+  dct:modified "2023-09-11T07:45:12+00:00"^^xsd:datetime;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "Vocabulary title"@en;
   skos:hasTopConcept vocab:1000, vocab:1007, vocab:1015, vocab:1019, vocab:1032, vocab:1045,
