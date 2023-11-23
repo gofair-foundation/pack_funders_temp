@@ -27,7 +27,7 @@
   dct:created "2022-06-01T00:00:00+00:00"^^xsd:datetime;
   dct:description "Vocabulary description"@en;
   dct:hasVersion "0.1.0";
-  dct:modified "2023-09-11T07:45:12+00:00"^^xsd:datetime;
+  dct:modified "2023-11-23T17:41:37+00:00"^^xsd:datetime;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "Vocabulary title"@en;
   skos:hasTopConcept vocab:1000, vocab:1007, vocab:1015, vocab:1019, vocab:1032, vocab:1045,
@@ -39,7 +39,12 @@ vocab:1000 a skos:Concept;
   skos:inScheme <http://purl.org/pact_funders>;
   skos:narrower vocab:1001, vocab:1002, vocab:1003, vocab:1004, vocab:1005, vocab:1006;
   skos:prefLabel "grant type"@en;
-  skos:topConceptOf <http://purl.org/pact_funders> .
+  skos:topConceptOf <http://purl.org/pact_funders>;
+  iop:hasConstraint "test"@en;
+  iop:hasContextObject "test"@en;
+  iop:hasMatrix "test"@en;
+  iop:hasObjectOfInterest "test"@en;
+  iop:hasProperty "test"@en .
 
 vocab:1001 a skos:Concept;
   skos:broader vocab:1000;
